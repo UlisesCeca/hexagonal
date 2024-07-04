@@ -1,2 +1,7 @@
-package com.example.domain.repository;public class OrderRepository {
+package com.example.domain.repository;
+
+import com.example.domain.model.Order;
+import io.quarkus.hibernate.orm.panache.PanacheRepository;
+
+public class OrderRepository implements PanacheRepository<Order> {
 }
